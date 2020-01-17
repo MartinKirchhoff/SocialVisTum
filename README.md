@@ -1,6 +1,6 @@
 # AspectVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data
 
-The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/BrambleXu/Unsupervised-Attention-Aspect-Extraction)
+The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction)
 
 ## Requirements
 - Only a browser is required to test the tool with the existing data
@@ -68,7 +68,7 @@ To test the toolkit with existing data, use the following link: [AspectVisTum De
 The parameter &lt;domain&gt; specifies the name of the folder that includes the data set.   
 If you want to use the existing organic food data set use organic_food_preprocessed.
 
-9. To extract topics and topic information and create the JSON file, use ```python ./code/train.py --domain <domain> --conf <conf> --emb-path ./preprocessed_data/<domain>/glove_w2v_300_filtered.txt```
+9. To extract all relevant aspect information, use ```python ./code/train.py --domain <domain> --conf <conf> --emb-path ./preprocessed_data/<domain>/glove_w2v_300_filtered.txt```
 &lt;conf&gt; is used to create a seperate result folder for each time you train the model with different parameters. You can simply use 0 for the first time.
 Moreover, you can adjust all relevant training parameters as explained in the Parameter Overview section. The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt;.
 
@@ -88,7 +88,7 @@ Example: ```python ./code/train.py --domain <domain> --conf <conf> --emb-path ./
 | --domain              | Domain of the corpus                                    | str   | required                           |
 | --conf                | Train configuration for the given domain                | str   | required                           |
 | --emb-path            | Path to the word embedding file                         | str   | required                           |
-| --num-topics          | Number of topics detected                               | int   | 20                                 |
+| --num-topics          | Number of aspects/topics detected                               | int   | 20                                 |
 | --vocab-size          | Vocabulary size. 0 means no limit                       | int   | 9000                               |
 | --num-words           | Number of representative sentences displayed            | int   | 10                                 |
 | --num-sentences       | Number of representative words displayed                | int   | 10                                 |
@@ -98,8 +98,8 @@ Example: ```python ./code/train.py --domain <domain> --conf <conf> --emb-path ./
 | --neg-size            | Number of negative instances used for training          | int   | 20                                 |
 | --maxlen              | Maximum number of words in every sentence               | int   | 0                                  |
 | --algorithm           | Optimization algorithm used (rmsprop, sgd, adam...)     | str   | "adam"                             |
-| --fix-clusters        | Fix initial topic clusters ("yes" or "no")              | str   | "no"                               |
+| --fix-clusters        | Fix initial aspect clusters ("yes" or "no")              | str   | "no"                               |
 | --ortho-reg           | Weight of orthogonal regularization                     | float | 0.1                                |
-| --probability-batches | Number of batches used to calculate topic probabilities | int   | Number of training examples / 5000 |
+| --probability-batches | Number of batches used to calculate aspect probabilities | int   | Number of training examples / 5000 |
 | --emb-dim             | Embeddings dimension                                    | int   | 300                                |
 | --emb-type            | Type of word embedding to use                           | str   | "glove_finetuned"                  |

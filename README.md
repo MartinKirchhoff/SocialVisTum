@@ -66,7 +66,7 @@ To test the toolkit with existing data, use the following link: [AspectVisTum De
 
 8. To preprocess the data and finetune the embeddings go back to the main directory and use ```python ./code/preprocess.py --domain-name <domain>```  
 The parameter &lt;domain&gt; specifies the name of the folder that includes the data set.   
-If you want to use the existing organic food data set use *organic_food_preprocessed*.
+If you want to use the existing organic food data set use *organic_food_preprocessed*.    
 
 9. To train the model and extract all relevant aspect information, use ```python ./code/train.py --domain <domain> --conf <conf> --emb-path ./preprocessed_data/<domain>/glove_w2v_300_filtered.txt```
 &lt;conf&gt; is used to create a separate result folder for each time you train the model with different parameters. You can simply use 0 for the first time. &lt;emb-path&gt; specifies the location of the finetuned embeddings.
@@ -74,7 +74,7 @@ Moreover, you can adjust all other relevant training parameters as explained in 
 
 10. To show the visualization and labeling tool in the browser, use ```python ./code/display_visualization.py --domain <domain> --conf <conf> --port <port>```.  
 &lt;port&gt; specifies the port where it is opened and is by default set to 9000.  
-If the visualization does not show anything or the visualization shows the result of a previous setting, the port might already be in use. To get the correct result, simply use another port (e.g, 9001).
+If the visualization does not show anything or the visualization shows the result of a previous setting, the port might already be in use. To get the correct result, simply use another port (e.g., 9001).
 
 ### Training Parameter Overview
 
@@ -94,7 +94,7 @@ Example: ```python ./code/train.py --domain organic_food_preprocessed --conf 0 -
 | --batch-size          | Batch size used to train the model                      | int   | 64                                 |
 | --epochs              | Number of epochs                                        | int   | 20                                 |
 | --neg-size            | Number of negative instances used for training          | int   | 20                                 |
-| --maxlen              | Maximum number of words in every sentence               | int   | 0                                  |
+| --maxlen              | Maximum number of words in every sentence               | int   | 0 (Unlimited)                                 |
 | --algorithm           | Optimization algorithm used (rmsprop, sgd, adam...)     | str   | "adam"                             |
 | --fix-clusters        | Fix initial aspect clusters ("yes" or "no")              | str   | "no"                               |
 | --ortho-reg           | Weight of orthogonal regularization                     | float | 0.1                                |

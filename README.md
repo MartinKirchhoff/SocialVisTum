@@ -1,22 +1,48 @@
 # AspectVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data
 
-The model used to extract aspects/topics is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/BrambleXu/Unsupervised-Attention-Aspect-Extraction)
+The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/BrambleXu/Unsupervised-Attention-Aspect-Extraction)
 
-## Test the toolkit in the browser using GitHub Pages
-To test the toolkit with existing data use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
+## Test the Toolkit With Existing Data in the Browser Using Github Pages
+1. To test the toolkit with existing data use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
 
-## Test the toolkit locally using the demo##
-1. Download the folder visualization-demo from the repository
+## Tool Overview and Functionalities
 
-2. Open a terminal window in the folder visualization-demo.
+### 1. Overview
 
-3. Use "conda create -n visualization_demo python=2.7“ to set up a new conda environment with the name "visualization_demo"
+#### Nodes
+- Nodes represent aspect clusters
+- Nodes are are automatically labeled with suitable names
+- Next to the name, the number of occurrences can be seen (Number of sentences that refer to the aspects)
+- The node size is based on the number of occurrences
 
-4. Activate the environment with "source activate visualization_demo"
+#### Links
+- Links and link labels represent the correlation between two aspects
+- If the correlation is larger (in absolute terms), the line thickness increases
 
-5. To show the visualization in the browser, use „python display_visualization.py“.  
- If an error occurs, this might be because another application is already using the port 9000.   
-In this case, specify another port by using "python display_visualization.py --port &lt;port&gt;" instead.
+#### Force-Directed Graph Layout
+- Nodes repel each other
+- A gravitational force keeps the graph centered
+
+### 2. Functionalities
+
+#### Sidebar Options
+- *Occurrence threshold* defines the percentage of sentences that must refer to an aspect to display the associated node
+- *Correlation threshold* defines the correlation required to display the associated link
+- *Most similar words* displays representative words for an aspect after double-clicking the node
+- *Most similar sentences* displays representative sentences for an aspect after double-clicking the node
+- *Download updated data* as JSON file can be used to download an updated JSON file after renaming or deleting aspects
+- *Center* can be used to move the graph position and the gravitational force
+- *Link* can be used to change the length of links
+
+#### Move Nodes
+- Simply move aspect nodes by dragging the node or the associated label
+
+#### Rename nodes
+- To rename a node, left-click on the label and input the new name
+- If you download an updated JSON file this change will be reflected in the output
+
+#### Remove nodes
+- To remove a node, right-click on its label
 
 ## Test the toolkit with new data or parameters
 

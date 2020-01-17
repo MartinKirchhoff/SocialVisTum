@@ -68,7 +68,7 @@ If you want to use the existing organic food data set use organic_food_preproces
 &lt;conf&gt; is used to create a seperate result folder for each time you train the model with different parameters. You can simply use 0 for the first time.
 Moreover, you can adjust all relevant training parameters as explained in the Parameter Overview section. The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt;.
 
-10. To show the visualization and labeling tool in the browser, use ```python ./code/display_visualization.py --domain &lt;domain&gt; --conf &lt;conf&gt; --port &lt;port&gt;```.  
+10. To show the visualization and labeling tool in the browser, use ```python ./code/display_visualization.py --domain <domain> --conf <conf> --port <port>```.  
 &lt;port&gt; specifies the port where it is opened and is by default set to 9000.  
 If the visualization does not show anything or the visualization shows the result of a previous setting, the port might already be in use. To get the correct result, simply use another port.
 

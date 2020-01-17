@@ -50,7 +50,7 @@ To test the toolkit with existing data use the following link: [AspectVisTum Dem
 
 2. Open a terminal window in the folder visualization-project.
 
-3. Use "conda env create -f environment.yml" to create a new environment with the name "visualization_env", which contains the required packages.
+3. Use ```conda env create -f environment.yml``` to create a new environment with the name "visualization_env", which contains the required packages.
 
 4. Activate the environment with "source activate visualization_env"
 
@@ -68,16 +68,16 @@ If you want to use the existing organic food data set use organic_food_preproces
 &lt;conf&gt; is used to create a seperate result folder for each time you train the model with different parameters. You can simply use 0 for the first time.
 Moreover, you can adjust all relevant training parameters as explained in the Parameter Overview section. The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt;.
 
-10. To show the visualization and labeling tool in the browser, use "python ./code/display_visualization.py --domain &lt;domain&gt; --conf &lt;conf&gt; --port &lt;port&gt;".  
+10. To show the visualization and labeling tool in the browser, use ```python ./code/display_visualization.py --domain &lt;domain&gt; --conf &lt;conf&gt; --port &lt;port&gt;```.  
 &lt;port&gt; specifies the port where it is opened and is by default set to 9000.  
 If the visualization does not show anything or the visualization shows the result of a previous setting, the port might already be in use. To get the correct result, simply use another port.
 
-11. To calculate the F1 scores use "python ./code/evaluation.py --domain &lt;domain&gt; --conf &lt;conf&gt;". The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt; in the file results.
+11. To calculate the F1 scores use ```python ./code/evaluation.py --domain &lt;domain&gt; --conf &lt;conf&gt;```. The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt; in the file results.
 
 ### Training Parameter Overview
 
 The following table defines all the parameters that are used to train the model with new data. All the parameters can be adjusted by adding the name of the parameter and its associated value to the "python ./code/train.py" command.   
-Example: "python ./code/train.py --domain &lt;domain&gt; --conf &lt;conf&gt;--emb-path ./preprocessed_data/&lt;domain&gt;/glove_w2v_300_filtered.txt --num-topics 5 --num-words 30"
+Example: ```python ./code/train.py --domain &lt;domain&gt; --conf &lt;conf&gt;--emb-path ./preprocessed_data/&lt;domain&gt;/glove_w2v_300_filtered.txt --num-topics 5 --num-words 30```
 
 | Name                  | Explanation                                             | Type  | Default                            |
 |-----------------------|---------------------------------------------------------|-------|------------------------------------|

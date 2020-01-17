@@ -3,11 +3,11 @@
 The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/BrambleXu/Unsupervised-Attention-Aspect-Extraction)
 
 ## Test the Toolkit With Existing Data in the Browser Using Github Pages
-1. To test the toolkit with existing data use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
+To test the toolkit with existing data use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
 
 ## Tool Overview and Functionalities
 
-### 1. Overview
+### Tool Overview
 
 #### Nodes
 - Nodes represent aspect clusters
@@ -23,7 +23,7 @@ The method used to create aspect clusters is based on an existing approach that 
 - Nodes repel each other
 - A gravitational force keeps the graph centered
 
-### 2. Functionalities
+### Tool Functionalities
 
 #### Sidebar Options
 - *Occurrence threshold* defines the percentage of sentences that must refer to an aspect to display the associated node
@@ -74,9 +74,9 @@ If the visualization does not show anything or the visualization shows the resul
 
 11. To calculate the F1 scores use "python ./code/evaluation.py --domain &lt;domain&gt; --conf &lt;conf&gt;". The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt; in the file results.
 
-**Training Parameter Overview**
+### Training Parameter Overview
 
-All the training parameters can be adjusted by adding the name of the parameter and its associated value to the "python ./code/train.py" command.   
+The following table defines all the parameters that are used to train the model with new data. All the parameters can be adjusted by adding the name of the parameter and its associated value to the "python ./code/train.py" command.   
 Example: "python ./code/train.py --domain &lt;domain&gt; --conf &lt;conf&gt;--emb-path ./preprocessed_data/&lt;domain&gt;/glove_w2v_300_filtered.txt --num-topics 5 --num-words 30"
 
 | Name                  | Explanation                                             | Type  | Default                            |

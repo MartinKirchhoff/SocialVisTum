@@ -50,9 +50,9 @@ To test the toolkit with existing data use the following link: [AspectVisTum Dem
 
 2. Open a terminal window in the folder visualization-project.
 
-3. Use ```conda env create -f environment.yml``` to create a new environment with the name "visualization_env", which contains the required packages.
+3. Use ```conda env create -f environment.yml``` to create a new environment with the name *visualization_env*, which contains the required packages.
 
-4. Activate the environment with "source activate visualization_env"
+4. Activate the environment using ```source activate visualization_env```
 
 5. Download the pre-trained GloVe embeddings with 6B tokens (glove.6B.zip) from https://nlp.stanford.edu/projects/glove/
 
@@ -60,11 +60,11 @@ To test the toolkit with existing data use the following link: [AspectVisTum Dem
 
 7. Navigate to the datasets folder and copy your dataset as a subfolder in the directory.  The name of the subfolder will be used as &lt;domain&gt; of your dataset in the following commands.
 
-8. To preprocess the data and finetune the embeddings use "python ./code/preprocess.py --domain-name &lt;domain&gt;"  
+8. To preprocess the data and finetune the embeddings use ```python ./code/preprocess.py --domain-name &lt;domain&gt;```  
 The parameter &lt;domain&gt; specifies the name of the folder that includes the data set.   
 If you want to use the existing organic food data set use organic_food_preprocessed.
 
-9. To extract topics and topic information and create the JSON file, use "python ./code/train.py --domain &lt;domain&gt; --conf &lt;conf&gt;--emb-path ./preprocessed_data/&lt;domain&gt;/glove_w2v_300_filtered.txt"
+9. To extract topics and topic information and create the JSON file, use ```python ./code/train.py --domain &lt;domain&gt; --conf &lt;conf&gt;--emb-path ./preprocessed_data/&lt;domain&gt;/glove_w2v_300_filtered.txt```
 &lt;conf&gt; is used to create a seperate result folder for each time you train the model with different parameters. You can simply use 0 for the first time.
 Moreover, you can adjust all relevant training parameters as explained in the Parameter Overview section. The results are saved in the folder /code/output_dir/&lt;domain&gt;/&lt;conf&gt;.
 

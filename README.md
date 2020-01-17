@@ -6,7 +6,7 @@ The method used to create aspect clusters is based on an existing approach that 
 - Only a browser is required to test the tool with the existing data
 - To test the toolkit with a new data set, Python 2.7 and a package manager like Conda are required.
 
-## Test the Toolkit With Existing Data in the Browser Using Github Pages
+## Test the Toolkit With Existing Data Using Github Pages
 To test the toolkit with existing data, use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
 
 ## Tool Overview and Functionalities
@@ -29,15 +29,6 @@ To test the toolkit with existing data, use the following link: [AspectVisTum De
 
 ### Tool Functionalities
 
-#### Sidebar Options
-- *Occurrence threshold* defines the percentage of sentences that must refer to an aspect to display the associated node
-- *Correlation threshold* defines the correlation required to display the associated link
-- *Most similar words* displays representative words for an aspect after double-clicking the node
-- *Most similar sentences* displays representative sentences for an aspect after double-clicking the node
-- *Download updated data* as JSON file can be used to download an updated JSON file after renaming or deleting aspects
-- *Center* can be used to move the graph position and the gravitational force
-- *Link* can be used to change the length of links
-
 #### Move Nodes
 - Simply move aspect nodes by dragging the node or the associated label
 
@@ -47,6 +38,15 @@ To test the toolkit with existing data, use the following link: [AspectVisTum De
 
 #### Remove nodes
 - To remove a node, right-click on its label
+
+#### Sidebar Options
+- *Occurrence threshold* defines the percentage of sentences that must refer to an aspect to display the associated node
+- *Correlation threshold* defines the correlation required to display the associated link
+- *Most similar words* displays representative words for an aspect after double-clicking the node
+- *Most similar sentences* displays representative sentences for an aspect after double-clicking the node
+- *Download updated data as JSON file* can be used to download an updated JSON file after renaming or deleting aspects
+- *Center* can be used to move the graph position and the gravitational force
+- *Link* can be used to change the length of links
 
 ## Test the toolkit with new data or parameters
 

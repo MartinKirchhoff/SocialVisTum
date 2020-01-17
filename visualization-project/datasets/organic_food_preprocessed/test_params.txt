@@ -1,0 +1,11 @@
+csv_path:./data_v3/annotated_data/combined.csv
+keep_multilabel:False
+keep_na:False
+keep_missing_author:True
+min_post_len:2
+sentence_filter_or:['organic', 'food']
+result_path:./preprocessed_data_v3/organic_food_preprocessed/test.txt
+result_labels_path:./preprocessed_data_v3/organic_food_preprocessed/test_labels.txt
+result_ids_path:./preprocessed_data_v3/organic_food_preprocessed/test_ids.txt
+param_path:./preprocessed_data_v3/organic_food_preprocessed/test_params.txt
+replacements:True

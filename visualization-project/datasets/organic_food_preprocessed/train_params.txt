@@ -1,0 +1,9 @@
+json_path:./data_v3/raw_source_data_spell_corrected/combined/*.json
+keep_irrelevant:False
+sentence_level:True
+min_post_len:2
+post_filter_or:None
+sentence_filter_or:['organic', 'food']
+result_path:./preprocessed_data_v3/organic_food_preprocessed/train.txt
+param_path:./preprocessed_data_v3/organic_food_preprocessed/train_params.txt
+replacements:True

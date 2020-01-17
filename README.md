@@ -1,11 +1,11 @@
-#AspectVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data#
+# AspectVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data
 
 The model used to extract aspects/topics is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/BrambleXu/Unsupervised-Attention-Aspect-Extraction)
 
-##Test the toolkit in the browser using GitHub Pages##
+## Test the toolkit in the browser using GitHub Pages
 To test the toolkit with existing data use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
 
-##Test the toolkit locally using the demo##
+## Test the toolkit locally using the demo##
 1. Download the folder visualization-demo from the repository
 
 2. Open a terminal window in the folder visualization-demo.
@@ -18,7 +18,7 @@ To test the toolkit with existing data use the following link: [AspectVisTum Dem
  If an error occurs, this might be because another application is already using the port 9000.   
 In this case, specify another port by using "python display_visualization.py --port &lt;port&gt;" instead.
 
-##Test the toolkit with new data or parameters##
+## Test the toolkit with new data or parameters
 
 1. Download the folder visualization-project from the repository.
 

@@ -677,7 +677,6 @@ class Train(object):
         plt.savefig(self.out_dir + "/model_loss.pdf", format="pdf")
         plt.savefig(self.out_dir + "/model_loss.png", format="png")
 
-
 def main():
     logging.basicConfig(
         filename='out.log',
@@ -721,16 +720,6 @@ def main():
                              "If an out of memory error or bus error occurs, increase this value.")
     parser.add_argument("--emb-dim", dest="emb_dim", type=int, metavar='<int>', default=300,
                         help="Embeddings dimension (default=300)")
-    parser.add_argument("--emb-type", dest="emb_type", type=str, metavar='<str>', default="glove_finetuned",
-                        help="The type of word vectors to use (glove, both, w2v, word2vec_finetune, glove_finetuned)")
-
-
-
-
-
-
-
-
 
     args = parser.parse_args()
     out_dir = './code/output_dir/' + args.domain + '/' + args.conf

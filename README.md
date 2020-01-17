@@ -96,8 +96,7 @@ Example: ```python ./code/train.py --domain organic_food_preprocessed --conf 0 -
 | --neg-size            | Number of negative instances used for training          | int   | 20                                 |
 | --maxlen              | Maximum number of words in every sentence               | int   | 0 (Unlimited)                                 |
 | --algorithm           | Optimization algorithm used (rmsprop, sgd, adam...)     | str   | "adam"                             |
-| --fix-clusters        | Fix initial aspect clusters ("yes" or "no")              | str   | "no"                               |
+| --fix-clusters        | Fix initial aspect clusters ("yes" or "no")              | str   |"no"                               |
 | --ortho-reg           | Weight of orthogonal regularization                     | float | 0.1                                |
-| --probability-batches | Number of batches used to calculate aspect probabilities | int   | Number of training examples / 5000 |
+| --probability-batches | Number of batches used to calculate aspect probabilities | int   | Number of training examples /5000 |
 | --emb-dim             | Embeddings dimension                                    | int   | 300                                |
-| --emb-type            | Type of word embedding to use                           | str   | "glove_finetuned"                  |

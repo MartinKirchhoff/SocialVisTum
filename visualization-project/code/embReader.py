@@ -14,28 +14,6 @@ class EmbReader:
     def __init__(self, emb_path, emb_dim=None, wv_type=None):
 
         glove_emb_path = os.path.join('./pretrained_embeddings/glove.6B/glove.6B.300d.txt')
-        word2vec_emb_path = os.path.join('./pretrained_embeddings/GoogleNews-vectors-negative300.txt')
-
-        ##########Glove
-        self.embeddings_index = {}
-        if wv_type == "glove" or wv_type == "both":
-            f = open(glove_emb_path)
-            for line in f:
-                values = line.split()
-                word = values[0]
-                coefs = np.asarray(values[1:], dtype='float32')
-                self.embeddings_index[word] = coefs
-            f.close()
-        elif wv_type == "word2vec_finetune":
-            f = open(word2vec_emb_path)
-            for line in f:
-                values = line.split()
-                word = values[0]
-                coefs = np.asarray(values[1:], dtype='float32')
-                self.embeddings_index[word] = coefs
-            f.close()
-
-            logger.info('Found %s word vectors.' % len(self.embeddings_index))
 
         ############
         self.embeddings = {}
@@ -43,26 +21,12 @@ class EmbReader:
 
         logger.info('Loading embeddings from: %s', emb_path)
 
-        if wv_type in ["both", "glove", "w2v", "word2vec_finetune"]:  # Check this again
-            model = gensim.models.Word2Vec.load(emb_path)
-        else:  # glove_finetuned
-            model = gensim.models.KeyedVectors.load_word2vec_format(emb_path, binary=False)
-
+        model = gensim.models.Word2Vec.load(emb_path)
         self.emb_dim = emb_dim
 
         for word in model.wv.vocab:
-            if wv_type == "both":
-                self.embeddings[word] = list(np.concatenate((model[word], self.get_glove_or_none(word))))
-                emb_matrix.append(list(np.concatenate((model[word], self.get_glove_or_none(word)))))
-            elif wv_type == "glove":
-                self.embeddings[word] = list((self.get_glove_or_none(word)))
-                emb_matrix.append(list(self.get_glove_or_none(word)))
-            elif wv_type == "w2v" or wv_type == "glove_finetuned":
-                self.embeddings[word] = list(model[word])
-                emb_matrix.append(list(model[word]))
-            elif wv_type == "word2vec_finetune":
-                self.embeddings[word] = list(self.get_word2vec_or_none(word))
-                emb_matrix.append(list(self.get_word2vec_or_none(word)))
+            self.embeddings[word] = list(model[word])
+            emb_matrix.append(list(model[word]))
 
         self.vector_size = len(self.embeddings)
         self.emb_matrix = np.asarray(emb_matrix)

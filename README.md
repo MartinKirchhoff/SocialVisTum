@@ -2,8 +2,13 @@
 
 The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/BrambleXu/Unsupervised-Attention-Aspect-Extraction)
 
+## Requirements
+- The toolkit can be used for any English text corpus or with the existing data set
+- Python 2.7 is required
+- A package manager like Conda is required to import the utilized libraries
+
 ## Test the Toolkit With Existing Data in the Browser Using Github Pages
-To test the toolkit with existing data use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
+To test the toolkit with existing data, use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
 
 ## Tool Overview and Functionalities
 

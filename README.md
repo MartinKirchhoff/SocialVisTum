@@ -7,7 +7,7 @@ The method used to create aspect clusters is based on an existing approach that 
 - To test the toolkit with a new data set, Python 2.7 and a package manager like Conda are required.
 
 ## Test the Toolkit With Existing Data Using Github Pages
-To test the toolkit with existing data, use the following link: [SocialVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
+To test the toolkit with existing data, use the following link: [SocialVisTum Demo](https://ghagerer.github.io/SocialVisTum/)
 
 ## Tool Overview and Functionalities
 

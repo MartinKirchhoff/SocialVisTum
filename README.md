@@ -9,8 +9,8 @@ The method used to create aspect clusters is based on an existing approach that 
 ## Test the Toolkit With Existing Data Using Github Pages
 To test the toolkit with existing data, use the following links: 
 
-- [SocialVisTum Demo with automatic labels](https://ghagerer.github.io/SocialVisTum/)
-- [SocialVisTum Demo with manual labels (case study)](https://ghagerer.github.io/SocialVisTum/)
+- [SocialVisTum Demo with automatic labels](https://ghagerer.github.io/SocialVisTum/visualization-demos/automatic-labels/index.html)
+- [SocialVisTum Demo with manual labels (case study)](https://ghagerer.github.io/SocialVisTum/visualization-demos/manual-labels/index.html)
 
 ## Tool Overview and Functionalities
 

@@ -1,4 +1,4 @@
-# AspectVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data
+# SocialVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data
 
 The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction)
 

@@ -2,7 +2,7 @@
   "nodes": [
     {
       "group": 2,
-      "id": "act",
+      "id": "diseases",
       "occurrences": "2189",
       "sentences": [
         {
@@ -101,7 +101,7 @@
     },
     {
       "group": 3,
-      "id": "compost",
+      "id": "organic_production_standards",
       "occurrences": "14692",
       "sentences": [
         {
@@ -200,7 +200,7 @@
     },
     {
       "group": 4,
-      "id": "describe",
+      "id": "organic_food",
       "occurrences": "4895",
       "sentences": [
         {
@@ -299,7 +299,7 @@
     },
     {
       "group": 5,
-      "id": "kroger",
+      "id": "retailers",
       "occurrences": "8344",
       "sentences": [
         {
@@ -398,7 +398,7 @@
     },
     {
       "group": 6,
-      "id": "plant",
+      "id": "farming",
       "occurrences": "2066",
       "sentences": [
         {
@@ -497,7 +497,7 @@
     },
     {
       "group": 7,
-      "id": "food",
+      "id": "GMO",
       "occurrences": "18246",
       "sentences": [
         {
@@ -596,7 +596,7 @@
     },
     {
       "group": 9,
-      "id": "placental",
+      "id": "GMO_animals",
       "occurrences": "365",
       "sentences": [
         {
@@ -695,7 +695,7 @@
     },
     {
       "group": 10,
-      "id": "ill_health",
+      "id": "eating_emotions",
       "occurrences": "3240",
       "sentences": [
         {
@@ -794,7 +794,7 @@
     },
     {
       "group": 11,
-      "id": "chemical",
+      "id": "pesticides",
       "occurrences": "8486",
       "sentences": [
         {
@@ -893,7 +893,7 @@
     },
     {
       "group": 14,
-      "id": "foodstuff",
+      "id": "food_products",
       "occurrences": "8093",
       "sentences": [
         {
@@ -993,63 +993,63 @@
   ],
   "links": [
     {
-      "source": "describe",
-      "target": "compost",
+      "source": "organic_food",
+      "target": "organic_production_standards",
       "value": 0.33
     },
     {
-      "source": "plant",
-      "target": "kroger",
+      "source": "farming",
+      "target": "retailers",
       "value": 0.12
     },
     {
-      "source": "food",
-      "target": "describe",
+      "source": "GMO",
+      "target": "organic_food",
       "value": 0.33
     },
     {
-      "source": "placental",
-      "target": "kroger",
+      "source": "GMO_animals",
+      "target": "retailers",
       "value": 0.22
     },
     {
-      "source": "placental",
-      "target": "plant",
+      "source": "GMO_animals",
+      "target": "farming",
       "value": 0.29
     },
     {
-      "source": "ill_health",
-      "target": "plant",
+      "source": "eating_emotions",
+      "target": "farming",
       "value": 0.17
     },
     {
-      "source": "ill_health",
-      "target": "placental",
+      "source": "eating_emotions",
+      "target": "GMO_animals",
       "value": 0.29
     },
     {
-      "source": "chemical",
-      "target": "compost",
+      "source": "pesticides",
+      "target": "organic_production_standards",
       "value": 0.27
     },
     {
-      "source": "chemical",
-      "target": "plant",
+      "source": "pesticides",
+      "target": "farming",
       "value": 0.16
     },
     {
-      "source": "foodstuff",
-      "target": "compost",
+      "source": "food_products",
+      "target": "organic_production_standards",
       "value": 0.46
     },
     {
-      "source": "foodstuff",
-      "target": "describe",
+      "source": "food_products",
+      "target": "organic_food",
       "value": 0.1
     },
     {
-      "source": "foodstuff",
-      "target": "chemical",
+      "source": "food_products",
+      "target": "pesticides",
       "value": 0.11
     }
   ]

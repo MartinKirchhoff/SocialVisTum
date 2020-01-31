@@ -228,9 +228,9 @@
     });
 
     // Scales are used to calculate approriate values based on the data set
-    nodeScale = d3.scaleLinear().domain([min_occ, max_occ]).range([5, 15]);
+    nodeScale = d3.scaleLinear().domain([min_occ, max_occ]).range([5, 25]);
     nodeTextScale = d3.scaleLinear().domain([min_occ, max_occ]).range([10, 20]);
-    lineWidthScale = d3.scaleLinear().domain([0, 1]).range([.9, 9]);
+    lineWidthScale = d3.scaleLinear().domain([0, 1]).range([.3, 9]);
   }
 
   // Filter graph based on slider values

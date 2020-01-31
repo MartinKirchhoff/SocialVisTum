@@ -161,9 +161,9 @@
 
     // Force between nodes
     charge: {
-      strength: 50,
+      strength: -5,
       distanceMin: 1,
-      distanceMax: 500
+      distanceMax: 100
     },
 
     // Force that occurs when nodes overlap
@@ -180,7 +180,7 @@
 
     // Link distance (No actual force)
     link: {
-      distance: 350
+      distance: 400
     },
 
     // Occurrence threshold (2 means 2%)
@@ -230,7 +230,7 @@
     // Scales are used to calculate approriate values based on the data set
     nodeScale = d3.scaleLinear().domain([min_occ, max_occ]).range([5, 15]);
     nodeTextScale = d3.scaleLinear().domain([min_occ, max_occ]).range([10, 20]);
-    lineWidthScale = d3.scaleLinear().domain([0, 1]).range([.2, 2]);
+    lineWidthScale = d3.scaleLinear().domain([0, 1]).range([.9, 9]);
   }
 
   // Filter graph based on slider values

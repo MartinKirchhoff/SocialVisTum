@@ -1,4 +1,4 @@
-# AspectVisTum - A Toolkit for Graph Visualization and Automatic Labeling of Aspect Clusters in Text Data
+# SocialVisTUM - An Interactive Graphical Toolkit to Visualize and Label Clusters of Social Media Texts
 
 The method used to create aspect clusters is based on an existing approach that can be found here: [Unsupervised-Aspect-Extraction](https://github.com/ruidan/Unsupervised-Aspect-Extraction)
 
@@ -7,7 +7,10 @@ The method used to create aspect clusters is based on an existing approach that 
 - To test the toolkit with a new data set, Python 2.7 and a package manager like Conda are required.
 
 ## Test the Toolkit With Existing Data Using Github Pages
-To test the toolkit with existing data, use the following link: [AspectVisTum Demo](https://martinkirchhoff.github.io/AspectVisTum/)
+To test the toolkit with existing data, use the following links: 
+
+- [SocialVisTum Demo with automatic labels](https://ghagerer.github.io/SocialVisTum/visualization-demos/automatic-labels/index.html)
+- [SocialVisTum Demo with manual labels (case study)](https://ghagerer.github.io/SocialVisTum/visualization-demos/manual-labels/index.html)
 
 ## Tool Overview and Functionalities
 

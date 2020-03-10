@@ -630,9 +630,9 @@ class Train(object):
                                      [model.get_layer('att_weights').output, model.get_layer('p_t').output])
 
 
-                # If argument is not given explicitly by the user calculate good default value (One batch per 5000 entries)
+                # If argument is not given explicitly by the user calculate good default value (One batch + One batch per 5000 entries)
                 if self.args.probability_batches == 0:
-                    num_probability_batches = len(self.train_x) / 5000
+                    num_probability_batches = 1 + len(self.train_x) / 5000
                     self.logger.info('Using %s probability batches...', num_probability_batches)
 
                 else:
